@@ -1,0 +1,89 @@
+/* Styling for the contact section */
+.contact_section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw;
+}
+
+/* Styling for the heading inside the contact section */
+.contact_section > div > h2{
+    color: rgb(12,102,188);
+    font-size: 50px;
+}
+
+/* Styling for the paragraph inside the contact section */
+.contact_section > div > p{
+    color: grey;
+}
+
+/* Styling for the form container */
+.formContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8ff;
+  }
+  
+  /* Styling for form labels */
+  .formContainer label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for form inputs and textarea */
+  .formContainer input,
+  .formContainer textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling for textarea resizing */
+  .formContainer textarea {
+    resize: vertical;
+  }
+  
+  /* Styling for form submit button */
+  .formContainer button {
+    background-color: rgb(12,102,188);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  /* Styling for hover state of form submit button */
+  .formContainer button:hover {
+    background-color: rgb(10, 70, 126);
+  }
+  
+  /* Styling for disabled state of form submit button */
+  .formContainer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+/* Styling for the thank you message */
+.thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 45px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact_section{
+        flex-wrap: wrap;
+    }
+}

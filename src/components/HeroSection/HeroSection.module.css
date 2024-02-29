@@ -1,0 +1,55 @@
+/* Styling for the hero section */
+.hero_section{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 10vw;
+    color: #fff;
+    background-image: url("../../images/pexels-cottonbro-studio-6803523.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+/* Ensuring child elements have higher z-index than the pseudo-element */
+.hero_section > *{
+  z-index: 99;
+}
+
+/* Styling for the overlay */
+.hero_section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Styling for the "Know More" button */
+.know_more {
+    background-color: rgb(12,102,188);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  /* Styling for hover state of "Know More" button */
+  .know_more:hover {
+    background-color: rgb(10, 70, 126);
+  }
+  
+  /* Styling for disabled state of "Know More" button */
+  .know_more:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

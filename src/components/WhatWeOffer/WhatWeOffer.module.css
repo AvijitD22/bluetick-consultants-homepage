@@ -1,0 +1,69 @@
+/* Styling for the section containing What We Offer */
+.whatweoffer_section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the container of offer items */
+.whatweoffer_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling for each offer item */
+.offer_details {
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Styling for the heading of each offer item */
+.offer_heading {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Styling for the description of each offer item */
+.offer_description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Styling for the discuss button */
+.discuss_button {
+  background-color: rgb(12, 102, 188);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for hover state of discuss button */
+.discuss_button:hover {
+  background-color: rgb(10, 70, 126);
+}
+
+/* Styling for disabled state of discuss button */
+.discuss_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styling for the section heading */
+.section_heading {
+  margin-bottom: 20px;
+}

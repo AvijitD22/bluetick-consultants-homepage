@@ -1,0 +1,131 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Defining CSS variables */
+:root {
+	--mainColor: white;
+	--secondaryColor: rgb(10,103,188);
+	--textColor: #000;
+}
+
+/* Styling for the header */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+	box-shadow: 2px 2px 2px rgba(10,103,188,0.8);
+	z-index: 999;
+  }
+  
+  /* Styling for the logo */
+  .header > img {
+	font-size: 1.8rem;
+	letter-spacing: .4rem;
+	cursor: pointer;
+	margin-left: 2rem;
+	transition: all 1s;
+    height: 60px;
+  }
+  
+  /* Styling for logo hover */
+  .header > img:hover {
+	transform: scale(1.04);
+  }
+  
+  /* Styling for navigation */
+  nav {
+	margin-left: auto;
+  }
+  
+  /* Styling for navigation links */
+  nav a {
+	margin: 0 1rem;
+	text-decoration: none;
+	transition: all 0.3s;
+	color: var(--textColor);
+  }
+  
+  /* Styling for navigation links hover */
+  nav a:hover {
+	color: var(--secondaryColor);
+	transform: scale(1.1);
+  }
+  
+  /* Styling for navigation button */
+  .nav_btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+  }
+  
+    
+/* Styling for navigation in smaller screens */
+@media only screen and (max-width: 768px) {
+	/* Adjustments for logo in smaller screens */
+	.header > img{
+		margin-left: 0;
+	}
+
+	/* Showing navigation button in smaller screens */
+	.nav_btn {
+	  visibility: visible;
+	  opacity: 1;
+	}
+  
+	/* Styling for responsive navigation */
+	nav {
+	  position: fixed;
+	  top: -100vh;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 2rem;
+	  color: black;
+	  /* color: white; */
+	  transition: 1s;
+	}
+  
+	/* Styling for responsive navigation when open */
+	.responsive_nav {
+	  transform: translateY(100vh);
+	  transition: .8s;
+	  backdrop-filter: blur(20px) brightness(120%);
+	}
+  
+	.header > h3 {
+	  padding-left: 10px;
+	}
+  
+	/* Styling for close button in smaller screens */
+	.nav_close_btn {
+	  position: absolute;
+	  top: 2rem;
+	  right: 2rem;
+	}
+  
+		/* Adjusting font size for navigation links */
+	nav a {
+	  font-size: 1.5rem;
+	}
+  }
